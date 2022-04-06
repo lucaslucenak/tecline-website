@@ -1,0 +1,96 @@
+<%- include ('./partials/head.ejs'); %>
+
+<body>
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <img src="/img/logoTL.svg" alt="logoTL" width="50" height="32" tittle="TecLine"><span
+                class="fs-4">TecLine</span>
+        </a>
+
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="/services" class="nav-link">Serviços</a></li>
+            <li class="nav-item"><a href="/requestService" class="nav-link">Solicitar Serviço</a></li>
+            <li class="nav-item"><a href="/contact" class="nav-link active">Contato</a></li>
+            <li class="nav-item"><a href="/about" class="nav-link">Sobre</a></li>
+        </ul>
+    </header>
+
+
+    <main>
+        <div class="container" align="center">
+            <main>
+                <div class="py-5 text-center">
+                    <img class="d-block mx-auto mb-4" src="/img/logoTL.svg" alt="" width="72"
+                        height="57">
+                    <h2>Página de solicitação de serviço</h2>
+                    <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each
+                        required form group has a validation state that can be triggered by attempting to submit the
+                        form without completing it.</p>
+                </div>
+
+
+                <div class="col-md-7 col-lg-8">
+                    <h4 class="mb-3">Dados Cadastrais</h4>
+                    <form class="needs-validation" novalidate="">
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <label for="firstName" class="form-label">Seu nome</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value=""
+                                    required="">
+                                <div class="invalid-feedback">
+                                    Por favor adicione o seu nome para contato.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="address" class="form-label">Número (Contato)</label>
+                                <input type="text" class="form-control" id="address" placeholder="1234 Main St"
+                                    required="">
+                                <div class="invalid-feedback">
+                                    Por favor adicione um número para contato.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="email" class="form-label">Email <span
+                                        class="text-muted">(Opcional)</span></label>
+                                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                                <div class="invalid-feedback">
+                                    Por favor adicione um email válido
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-3">
+                                <label for="zip" class="form-label">Descrição do problema</label>
+                                <input type="textarea" class="form-control" id="zip" placeholder="" required="">
+                                <div class="invalid-feedback">
+                                    Por favor, adicione uma descrição válida.
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <button class="w-100 btn btn-primary btn-lg" type="submit">Solicitar Serviço</button>
+                    </form>
+                </div>
+        </div>
+    </main>
+
+
+    <!--Footer-->
+    <%- include ('./partials/footer.ejs'); %>
+
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+</script>
+<script src="/js/bootstrap.min.js"></script>
+
+</html>
